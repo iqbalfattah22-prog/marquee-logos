@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<style>
+
+body{
+  margin:0;
+  background:#000;
+  overflow:hidden;
+}
+
+.logo-marquee{
+  width:100%;
+  overflow:hidden;
+  padding:40px 0;
+  background:#000;
+}
+
+.logo-track{
+  display:flex;
+  align-items:center;
+  gap:80px;
+  width:max-content;
+
+  animation:scroll 25s linear infinite;
+}
+
+.logo-track img{
+  height:55px;
+  width:auto;
+
+  opacity:.85;
+
+  filter:
+    grayscale(100%)
+    drop-shadow(0 0 10px rgba(255,255,255,.12));
+
+  transition:.3s ease;
+}
+
+.logo-track img:hover{
+  transform:scale(1.08);
+  opacity:1;
+}
+
+@keyframes scroll{
+  from{
+    transform:translateX(0);
+  }
+
+  to{
+    transform:translateX(-50%);
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="logo-marquee">
+  <div class="logo-track">
+
+    <img src="https://i.imgur.com/HnMtjPF.png">
+    <img src="https://i.imgur.com/ggBFoTO.png">
+    <img src="https://i.imgur.com/jlC65Dv.png">
+    <img src="https://i.imgur.com/nd38MPX.png">
+    <img src="https://i.imgur.com/sUJ6hUO.png">
+    <img src="https://i.imgur.com/Cmnle7i.png">
+    <img src="https://i.imgur.com/NRKuFBR.png">
+    <img src="https://i.imgur.com/kRDafsY.png">
+    <img src="https://i.imgur.com/Fc2RSbd.png">
+    <img src="https://i.imgur.com/e9FMNoM.png">
+
+    <!-- duplicate -->
+    <img src="https://i.imgur.com/HnMtjPF.png">
+    <img src="https://i.imgur.com/ggBFoTO.png">
+    <img src="https://i.imgur.com/jlC65Dv.png">
+    <img src="https://i.imgur.com/nd38MPX.png">
+    <img src="https://i.imgur.com/sUJ6hUO.png">
+    <img src="https://i.imgur.com/Cmnle7i.png">
+    <img src="https://i.imgur.com/NRKuFBR.png">
+    <img src="https://i.imgur.com/kRDafsY.png">
+    <img src="https://i.imgur.com/Fc2RSbd.png">
+    <img src="https://i.imgur.com/e9FMNoM.png">
+
+  </div>
+</div>
+
+</body>
+</html>
